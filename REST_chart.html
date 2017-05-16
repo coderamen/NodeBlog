@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RESTful Routes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <style>
+    td {
+      color: #000;
+      font-weight: 200;
+    }
+    .card {
+      position: relative;
+      bottom: 70px;
+      height: 395px;
+      border: 0;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+    </style>
+</head>
+
+<body>
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+              <h1 class="display-3">RESTful Routes</h1>
+              <p class="lead">A table of all 7 RESTful routes</p>
+          </div>
+      </div>
+    <div class="container">
+      <div class="card">
+        <table class="table table-hover table-bordered">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Path</th>
+              <th>HTTP Verb</th>
+              <th>Purpose</th>
+              <th>Mongoose Method</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Index</td>
+              <td>/items</td>
+              <td>GET</td>
+              <td>List all items</td>
+              <td>Item.find()</td>
+            </tr>
+            <tr class="table-success">
+              <td>New</td>
+              <td>/items/new</td>
+              <td>GET</td>
+              <td>Show new item form</td>
+              <td>N/A</td>
+            </tr>
+            <tr class="table-success">
+              <td>Create</td>
+              <td>/items</td>
+              <td>POST</td>
+              <td>Create a new item, then redirect somewhere</td>
+              <td>Item.create()</td>
+            </tr>
+            <tr class="table-info">
+              <td>Show</td>
+              <td>/items/:id</td>
+              <td>GET</td>
+              <td>Create a new item, then redirect somewhere</td>
+              <td>Item.findById()</td>
+            </tr>
+            <tr class="table-warning">
+              <td>Edit</td>
+              <td>/items/:id/edit</td>
+              <td>GET</td>
+              <td>Create a new item, then redirect somewhere</td>
+              <td>Item.findById()</td>
+            </tr>
+            <tr class="table-warning">
+              <td>Update</td>
+              <td>/items/:id</td>
+              <td>PUT</td>
+              <td>Create a new item, then redirect somewhere</td>
+              <td>Item.findByIdAndUpdate()</td>
+            </tr>
+            <tr class="table-danger">
+              <td>Destroy</td>
+              <td>/items/:id</td>
+              <td>DELETE</td>
+              <td>Create a new item, then redirect somewhere</td>
+              <td>Item.findByIdAndRemove()</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- <div class="ui grid">
+    <div class="row">
+      <div class="column padding-reset">
+        <div class="ui huge message page grid">
+          <h1 class="ui huge header">RESTful Routes</h1>
+
+          <p>A table of all 7 RESTful routes</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</body>
+
+</html>
